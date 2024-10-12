@@ -1,0 +1,15 @@
+---
+import { ShoppingListViewApp } from "../components/react/ShoppingListViewApp";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Shopping List">
+  <ShoppingListViewApp client:load transition:persist />
+  <div class="flex justify-center p-4">
+    <a
+      href="/list"
+      class="text-white hover:bg-orange-400 text-center bg-orange-600 p-3 rounded-md"
+      >Go to List</a
+    >
+  </div>
+</Layout>
